@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Real States</title>
+    <title>Real Estate Website</title>
 </head>
 <body>
-    <h1>List of state</h1>
-    <ul>
-        {% for property in properties %}
-        <li>
-            <h2>{{ property.title }}</h2>
-            <p>{{ property.description }}</p>
-            <p>prix: {{ property.price }}</p>
-            <p>localisation {{ property.location }}</p>
-        </li>
-        {% endfor %}
-    </ul>
-</body>
+    <form method="POST">
+        <input type="text" name="search" placeholder="Search properties">
+        <button type="submit">Search</button>
+    </form>
+    </body>
 </html>
+
 
